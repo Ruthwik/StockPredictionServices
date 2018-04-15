@@ -1,0 +1,63 @@
+{
+	"id": "0ea4d6e2-1a92-49a9-acf4-7f3bb209bcaa",
+	"name": "StockPrediction",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"7df57a36-0245-4090-bff1-d9fcd07f4209",
+		"8b747e67-2c28-42fe-8611-9a1e7dcb8758"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "7df57a36-0245-4090-bff1-d9fcd07f4209",
+			"name": "Predict stock prices for list of dates ",
+			"url": "http://127.0.0.1:5000/stockprices",
+			"description": "input: list of dates\r\nreturns: list of predicted stock prices",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"stock\":[\n    {\n        \"date\": \"31/03/2018\"\n    },\n    {\n        \"date\": \"21/03/2018\"\n    },\n    {\n        \"date\": \"14/04/2018\"\n    },\n    {\n        \"date\": \"12/03/2018\"\n    }\n  ]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8b747e67-2c28-42fe-8611-9a1e7dcb8758",
+			"name": "Predict stock value for a date",
+			"url": "http://127.0.0.1:5000/stockprice",
+			"description": "input: date as string\r\nreturns: predicted stock price",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"date\": \"31/03/2018\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

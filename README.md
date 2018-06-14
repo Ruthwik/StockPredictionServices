@@ -32,7 +32,7 @@ Linear Regression is used to train the model. [This tutorial explains Linear Reg
 
  1. Import the StockPrediction.postman_collection.json into the Postman.
  2. Go to body of "Predict stock value for a date". Change the date and send the request.
-    The sample reponse would be
+    The sample response would be
     ```
     {
     "price": 177.067266992859

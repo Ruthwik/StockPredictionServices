@@ -41,8 +41,8 @@ Linear Regression is used to train the model. [This tutorial explains Linear Reg
   3. Go to body of "Predict stock prices for list of dates ". Give list of dates and send the request.
      The sample response would be
      
-     ```
-     
+```
+ 
      {
     "stock": [
         {
@@ -60,4 +60,4 @@ Linear Regression is used to train the model. [This tutorial explains Linear Reg
     ]
   }
   
-    ```
+```
